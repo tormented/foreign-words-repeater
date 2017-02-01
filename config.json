@@ -1,0 +1,12 @@
+{
+  "lingualeo": {
+    "baseUrl": "http://lingualeo.com",
+    "routes": {
+      "isAuth": "/isauthorized",
+      "login": "/api/login",
+      "getWordSets": "/userdict3/getWordSets",
+      "getGlossary": "/glossary/getGlossary",
+      "getUserGlossary": "/userdict/json"
+    }
+  }
+}

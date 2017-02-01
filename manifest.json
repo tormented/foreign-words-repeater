@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "--------------",
+  "version": "0.0.1",
+  "description": "Words repeater",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Words repeater",
+    "default_popup": "views/popup.html"
+  },
+  "permissions": [
+    "background",
+    "notifications",
+    "http://*/*"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "app/dist/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "js": ["app/dist/popup.js"],
+      "matches": ["http://*/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    "image/*.png"
+  ]
+}

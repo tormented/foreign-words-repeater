@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="background.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="background.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/background.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -54,6 +54,26 @@
                 <element signature="e#795#937#0" expanded="false" />
                 <element signature="e#956#996#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="background.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dist/background.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4560">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,8 +174,8 @@
         <option value="$PROJECT_DIR$/app/src/modules/helpers/Const.ts" />
         <option value="$PROJECT_DIR$/app/src/popup.ts" />
         <option value="$PROJECT_DIR$/app/src/modules/main/Reminder.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/src/background.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -231,6 +251,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,12 +365,12 @@
       <workItem from="1485789092826" duration="8615000" />
       <workItem from="1485883661885" duration="5147000" />
       <workItem from="1485948178154" duration="6336000" />
-      <workItem from="1485966748868" duration="130000" />
+      <workItem from="1485966748868" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25368000" />
+    <option name="totallyTimeSpent" value="25484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="735" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -546,7 +570,6 @@
     <entry file="file://$PROJECT_DIR$/app/dist/modules/Utils.js" />
     <entry file="file://$PROJECT_DIR$/app/dist/modules/Config.js.map" />
     <entry file="file://$PROJECT_DIR$/node_modules/system/system.js" />
-    <entry file="file://$PROJECT_DIR$/app/dist/background.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/commonjs/component.json" />
     <entry file="file://$PROJECT_DIR$/app/dist/modules/Config.js" />
     <entry file="file://$PROJECT_DIR$/build/bundle.js" />
@@ -640,6 +663,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3615">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,14 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -736,6 +752,22 @@
             <element signature="e#795#937#0" expanded="false" />
             <element signature="e#956#996#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dist/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4560">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

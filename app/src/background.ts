@@ -38,6 +38,8 @@ config
   .catch(console.warn);
 
 chrome.runtime.onMessage.addListener((msg) => {
+  console.log(msg);
+
   switch (msg.action) {
     case Actions.GET_DEFAULTS:
       utils.dispatch(Events.GOT_DEFAULTS, {data: reminder});
@@ -51,7 +53,12 @@ chrome.runtime.onMessage.addListener((msg) => {
     case Actions.REMINDER_RESTART:
       reminder.restart();
       break;
-
+    case Actions.REMINDER_CHANGE_TIME:
+      break;
+    case Actions.REMINDER_CHANGE_IMMEDIATELY:
+      break;
+    case Actions.REMINDER_CHANGE_PRONOUNCE:
+      break;
   }
 });
 

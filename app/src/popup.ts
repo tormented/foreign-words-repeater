@@ -14,11 +14,16 @@ chrome.runtime.onMessage.addListener((msg) => {
   }
 });
 
-utils.dispatch(Actions.GET_DEFAULTS);
+getDefaults();
 
 function initPopup(res){
-  initDefaults(res.data);
-  addActionListeners()
+  if(res.data){
+    initDefaults(res.data);
+    addActionListeners();
+    document.body.classList.add('loaded');
+  }else{
+    getDefaults();
+  }
 }
 
 function initDefaults(data){
@@ -29,6 +34,12 @@ function initDefaults(data){
   repeatTimeElement.value = data.defaultRepeatTime;
   startImmediately.checked = data.startImmediately;
   pronounceWord.checked = data.pronounceWord;
+
+  [repeatTimeElement, startImmediately, pronounceWord].forEach((element) => {
+    element.addEventListener('change', () => {
+      utils.dispatch(Actions['REMINDER_CHANGE_' + element.id.toUpperCase()], {value: element.type == 'checkbox' ? element.checked : parseInt(element.value)});
+    });
+  });
 }
 
 function addActionListeners() {
@@ -37,4 +48,9 @@ function addActionListeners() {
       utils.dispatch(Actions['REMINDER_' + element.id.toUpperCase()]);
     });
   });
+
+}
+
+function getDefaults(){
+  utils.dispatch(Actions.GET_DEFAULTS);
 }

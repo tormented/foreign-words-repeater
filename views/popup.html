@@ -14,9 +14,27 @@
       width: 40px;
       margin-left: 10px;
     }
-    .login-form {
-      height: 150px;
+    .main-content,
+    .preloader{
       width: 200px;
+      height: 150px;
+    }
+    .preloader{
+      text-align: center;
+    }
+    .preloader img {
+      width: 150px;
+    }
+    .main-content{
+      display: none;
+    }
+    body.loaded .main-content{
+      display: block;
+    }
+    body.loaded .preloader{
+      display: none;
+    }
+    .login-form {
       display: flex;
       flex-direction: column;
     }
@@ -33,35 +51,39 @@
   </style>
 </head>
 <body>
-  <h4>Settings:</h4>
-  <div class="login-form">
-    <div class="form-group">
-      <label for="time">
-        Repeat every:
-      </label>
-      <input id="time" type="number" placeholder="Time">&nbsp;second
-    </div>
+  <section class="preloader">
+    <img src="../images/preloader.gif" alt="preloader">
+  </section>
+  <section class="main-content">
+    <h4>Settings:</h4>
+    <div class="login-form">
+      <div class="form-group">
+        <label for="time">
+          Repeat every:
+        </label>
+        <input id="time" type="number" placeholder="Time">&nbsp;second
+      </div>
 
-    <div class="form-group">
-      <label for="immediately">
-        Start immediately:
-      </label>
-      <input id="immediately" type="checkbox">
-    </div>
+      <div class="form-group">
+        <label for="immediately">
+          Start immediately:
+        </label>
+        <input id="immediately" type="checkbox">
+      </div>
 
-    <div class="form-group">
-      <label for="pronounce">
-        Pronounce the word:
-      </label>
-      <input id="pronounce" type="checkbox">
+      <div class="form-group">
+        <label for="pronounce">
+          Pronounce the word:
+        </label>
+        <input id="pronounce" type="checkbox">
+      </div>
+      <div class="form-group btn-group">
+        <button id="start" class="popup-btn">Start</button>
+        <button id="stop" class="popup-btn">Stop</button>
+        <button id="restart" class="popup-btn">Restart</button>
+      </div>
     </div>
-    <div class="form-group btn-group">
-      <button id="start" class="popup-btn">Start</button>
-      <button id="stop" class="popup-btn">Stop</button>
-      <button id="restart" class="popup-btn">Restart</button>
-    </div>
-  </div>
-
+  </section>
   <script src="/app/dist/popup.js"></script>
 </body>
 </html>
